@@ -303,7 +303,7 @@ h3.blog__ttl--bottom {
     color: #747474
 }
 
-/*ブログ　カード*/
+
 
 
 
@@ -478,15 +478,13 @@ p.footer__ttl {
 
 .line {
 border-right:3px solid #D83784;
-/*線の設定*/
+
 padding-left: 50px;
 left: 790px;
 margin-top: 50px;
 position: absolute;
 width: 3px;
 height: 60px;
-
-/*余白の設定*/
 }
 
 
