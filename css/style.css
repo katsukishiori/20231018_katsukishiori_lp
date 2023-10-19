@@ -1,6 +1,12 @@
+h1, p:not(p.absolute__firstview--bottom):not(.footer__ttl):not(.card__date):not(.card__tag):not(.about__txt) {font-family: 'Gloria Hallelujah',
+cursive;
+font-family: 'Gorditas',
+serif;
+font-family: 'Kalam',
+cursive;
+}
+
 /*ヘッダー*/
-
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -22,7 +28,6 @@
 
 .header-nav-list {
     display: flex;
-    
 }
 
 .header-nav-item:not(:last-child) {
@@ -42,7 +47,6 @@
     padding-left: 700px;
     display: block;
     width: 60%;
-    
 }
 
 .relative__firstview {
@@ -51,9 +55,9 @@
 
 h1.absolute__firstview {
     position: absolute;
-    top: 30%;
-    padding-left: 400px;
-    font-size: 50px;
+    top: 25%;
+    padding-left: 350px;
+    font-size: 80px;
     color: #A72A65;
 }
 
@@ -64,7 +68,6 @@ h1.absolute__firstview {
     font-size: 25px;
     color: #A72A65;
 }
-
 
 .absolute__firstview--bottom {
     position: absolute;
@@ -87,53 +90,47 @@ div.news__ttl {
 }
 
 p.news__ttl--top {
-    
     left: 100px;
     font-size: 25px;
     color: #BF6C93;
 }
 
 h3.news__ttl--bottom {
-   
     font-size: 30px;
     color: #747474
 }
 
 ul.news {
-   padding-top: 80px;
-   padding-left: 150px;
-   text-decoration: none;
-   font-size: 20px;
-   line-height: 60px;
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 150px;
+    padding-bottom: 80px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
 }
 
-.ul.news span {
-    background-color: #A42966;
-        border: #A42966;
-        color: white;
-       
-       padding: 10px 20px;
-        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 4px 2px;
-        border-radius: 30px;
-
-
-
+.news__list{
+    display: inline-block
 }
 
+.news__list a {
+    background: #A42966;
+    padding: 5px 20px 5px 20px;
+    width: 600px;
+    height: 300px;
+    text-decoration-line: none;
+    border-radius: 50px;
+    color: #FFFFFF;
+}
 
 ul.news li {
-    max-width: 800px;
+    max-width: 1000px;
     border-top: 0.5px solid #A5A5A5;
     border-bottom: 0.5px solid #A5A5A5;
 }
 
-
-li.news__list:first-of-type { 
+li.news__list:first-of-type {
     border-top: 3px solid #A5A5A5;
 }
 
@@ -143,12 +140,14 @@ li.news__list:last-child {
 }
 
 li.news__list {
+    width: 1000px;
     list-style: none;
     color: #A5A5A5;
 }
-/*About*/
+
+/*テクノロジー×コーチング*/
 .about__ttl {
-    margin-top: 200px;
+    margin-top: 150px;
     left: 100px;
     text-align: center;
     line-height: 50px;
@@ -167,7 +166,6 @@ h3.about__ttl--bottom {
 .flex {
     display: flex;
     justify-content: space-around;
-    
 }
 
 p.about__txt {
@@ -175,17 +173,14 @@ p.about__txt {
     line-height: 25px;
     font-size: 25px;
     color: #747474;
-    
 }
+
 .about__img{
     display: block;
     width: 30%;
     margin-right: 10px;
     margin-top: 80px
 }
-
-
-
 
 /*サービス*/
 .service__ttl {
@@ -204,12 +199,7 @@ h3.service__ttl--bottom {
     color: #747474
 }
 
-
-
-
 .grid__business {
-   
-   
     display: grid;
     padding-top: 100px;
     padding-left: 150px;
@@ -219,12 +209,12 @@ h3.service__ttl--bottom {
 }
 
 .grid__business div {
-    text-align: center;
     font-size: 24px;
     color: #fff;
 }
 
 .box1 {
+    text-align: center;
     grid-column: 1/2;
     grid-row: 1/3;
     background: #a42a66;
@@ -232,7 +222,7 @@ h3.service__ttl--bottom {
 
 img.box1__item {
     width: 40%;
-   margin-top: 50px;
+    margin-top: 50px;
 }
 
 h4.box1__txt {
@@ -241,56 +231,67 @@ h4.box1__txt {
 
 p.box1__txt {
     text-align: left;
-    margin-left: 60px;
+    margin-left: 40px;
+    font-size: 20px;
 }
 
 .box2 {
     grid-column: 2/3;
     grid-row: 1/2;
     background: #a86089;
+    display: flex;
+    flex-direction: row;
 }
 
 img.box2__item {
-    width: 250px;
-    margin-top: 50px;
-    padding-left: 10px;
+    width: 30%;
+    margin-left: 50px;
 }
 
 .box2__txt {
-    margin-left: 180px;
-    margin-top: auto;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 40px;
 }
 
 p.box2__txt {
-    text-align: left;
-    margin-left: 60px;
+    font-size: 20px;
 }
-
-
-
-
 
 .box3 {
     grid-column: 2/3;
     grid-row: 2/3;
     background: #ac899d;
+    display: flex;
+    flex-direction: row;
 }
 
 img.box3__item {
-    width: 250px;
-    margin-top: 50px;
-    padding-left: 10px;
+    width: 30%;
+    margin-left: 50px;
+}
+
+.box3__txt {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+p.box3__txt {
+    font-size: 20px;
 }
 
 /*ブログ*/
 .blog {
     background-color: #F5F5F5;
-   
+    height: 800px;
 }
 .blog__ttl {
     margin-top: 150px;
     margin-left: 150px;
+    padding-top: 50px;
     line-height: 50px;
+    padding-bottom: 40px;
 }
 
 p.blog__ttl--top {
@@ -303,35 +304,23 @@ h3.blog__ttl--bottom {
     color: #747474
 }
 
-
-
-
-
 .flex__item {
     display: flex;
     justify-content: space-between;
-   
 }
 
 .blog__card {
     width: 30%;
     background-color: #FFFFFF;
     border-radius: 20px;
-    
-    
-}
-.card__img {
     position: relative;
 }
 
 .card__img img {
     width: 100%;
+    height: 200px;
     border-radius: 30px 30px 0px 0px;
-    
-
-    
 }
-
 
 .card__txt {
     padding: 15px 25px;
@@ -341,27 +330,23 @@ h3.blog__ttl--bottom {
     font-size: 18px;
     margin-bottom: 30px;
     font-weight: 400;
-    
 }
 
 .card__ttl {
     position: absolute;
-    padding-left: 0px;
     padding: 10px 25px;
-   padding-bottom: 10px;
+    left: 0px;
     background: #A42966;
     background-repeat: no-repeat;
-    margin-bottom: 15px;
     display: inline-block;
     color: #fff;
     font-size: 14px;
-    
     border-radius: 20px 0px 0px 0px;
 }
 
 .card__bottom {
     font-size: 14px;
-display: flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -376,10 +361,7 @@ display: flex;
     color: #A5A5A5;
 }
 
-
-
 .blog__btn {
-    
     margin: 100px 700px;
     width: 250px;
     height: 70px;
@@ -387,7 +369,6 @@ display: flex;
     text-align: center;
     border: solid 5px #BF6C93;
     border-radius: 50px;
-  
 }
 
 .blog__btn a {
@@ -395,28 +376,23 @@ display: flex;
     color: #BF6C93;
 }
 
-
-
-
-
-
-/*Company*/
+/*会社概要*/
 .company__ttl {
     margin-top: 150px;
+    margin-bottom: 20px;
     margin-left: 150px;
     line-height: 50px;
 }
 
-p.company__ttl--top {
+.company__ttl--top {
     font-size: 25px;
+    color: #BF6C93;
 }
 
-h3.company__ttl--bottom {
+.company__ttl--bottom {
     font-size: 30px;
     color: #747474
 }
-
-
 
 table.company__box {
     width: 60%;
@@ -441,67 +417,74 @@ table td {
     color: #A5A5A5;
 }
 
-
 /*インタビュー*/
 .interview {
     width: 100%;
     height: 400px;
     padding-top: 150px;
+    display: flex;
+    flex-direction: row;
 }
 
 .interview__left {
     background-image: url(../img/recruit.png);
+    background-position: left;
+    width: 50%;
+    height: 80%;
+}
+
+h6.interview__left--txt{
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 150px 300px;
 }
 
 .interview__right {
     background-image: url(../img/interview.png);
+    background-position: right;
+    width: 50%;
+    height: 80%;
 }
 
-
-
+h6.interview__right--txt {
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 150px 250px;
+}
 
 /*フッター*/
-
 p.footer__ttl {
-    margin-top: 300px;
+    margin-top: 150px;
     font-size: 20px;
     text-align: center;
     font-weight: bold;
     color: #A5A5A5;;
 }
 
-.footer__innner {
+.footer__inner {
     position: relative;
 }
 
-
-
 .line {
-border-right:3px solid #D83784;
-
-padding-left: 50px;
-left: 790px;
-margin-top: 50px;
-position: absolute;
-width: 3px;
-height: 60px;
+    border-right:3px solid #D83784;
+    left: 810px;
+    margin-top: 50px;
+    position: absolute;
+    width: 3px;
+    height: 60px;
 }
-
 
 a.footer__btn {
     padding: 20px;
-    margin: 150px 670px 30px;
+    margin: 150px 650px 80px;
     width: 300px;
     display: block;
     color: #fff !important;
     background: linear-gradient(90deg,#D83784,#A52A63);
     text-decoration: none;
-    
     font-size: 20px;
     border-radius: 50px;
     box-shadow: 0 10px 0 0 #791650;
-   
-   
 }
 
 a.footer__btn:before {
@@ -512,25 +495,9 @@ a.footer__btn:before {
     padding-right: 50px;
     margin-left: 30px;
     background: url("../img/mailicon.svg") no-repeat;
-    
     background-size:40px;
     vertical-align: middle;
 }
-
-
-a footer__btn {
-    
-    background: #ff0000;
-    width: 300px;
-    height: 300px;
-}
-
-
-
-
-
-
-
 
 .footer__bottom {
     position: relative;
@@ -542,14 +509,12 @@ a footer__btn {
 .footer__bottom {
     text-align: center;
     color: #A5A5A5;
-    ;
 }
 
 .footer__bottom--txt {
-   
     position: absolute;
-        left: 630px;
-        padding-top: 40px;
+    left: 650px;
+    padding-top: 40px;
 }
 
 
