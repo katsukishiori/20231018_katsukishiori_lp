@@ -43,7 +43,15 @@ cursive;
 
 /*relative*/
 .relative {
-    position: relative;
+    /*position: relative;*/
+    /*box-sizing: content-box;*/
+    width: 100px;
+    height: 100px;
+}
+
+.relative__firstview {
+    width: 100%;
+    
 }
 
 .relative__img {
@@ -91,6 +99,7 @@ div.news__ttl {
     margin-top: 150px;
     margin-left: 150px;
     line-height: 50px;
+    width: 30%;
 }
 
 p.news__ttl--top {
@@ -128,8 +137,12 @@ ul.news {
     color: #FFFFFF;
 }
 
+.news {
+    width: 50%;
+}
+
 ul.news li {
-    max-width: 1000px;
+    
     border-top: 0.5px solid #A5A5A5;
     border-bottom: 0.5px solid #A5A5A5;
 }
@@ -152,7 +165,7 @@ li.news__list {
 /*テクノロジー×コーチング*/
 .about__ttl {
     margin-top: 150px;
-    left: 100px;
+    left: 150px;
     text-align: center;
     line-height: 50px;
 }
@@ -188,10 +201,15 @@ p.about__txt {
 }
 
 /*サービス*/
+.service {
+    width: 500px;
+}
+
 .service__ttl {
     margin-top: 150px;
     margin-left: 150px;
     line-height: 50px;
+    width: 200px;
 }
 
 p.service__ttl--top {
@@ -290,7 +308,7 @@ p.box3__txt {
 .blog {
     background-color: #F5F5F5;
     height: 800px;
-    width: 1500px;
+    width: 100%;
 }
 .blog__ttl {
     margin-top: 150px;
@@ -298,6 +316,7 @@ p.box3__txt {
     padding-top: 50px;
     line-height: 50px;
     padding-bottom: 40px;
+    width: 800px;
 }
 
 p.blog__ttl--top {
@@ -443,7 +462,7 @@ table td {
 .interview__left {
     background-image: url(../img/recruit.png);
     background-position: left;
-    width: 46%;
+    width: 50%;
     height: 80%;
 }
 
@@ -456,7 +475,7 @@ h6.interview__left--txt{
 .interview__right {
     background-image: url(../img/interview.png);
     background-position: right;
-    width: 45%;
+    width: 50%;
     height: 80%;
 }
 
@@ -481,7 +500,7 @@ p.footer__ttl {
 
 .line {
     border-right:3px solid #D83784;
-    left: 810px;
+    left: 740px;
     margin-top: 50px;
     position: absolute;
     width: 3px;
@@ -490,7 +509,7 @@ p.footer__ttl {
 
 a.footer__btn {
     padding: 20px;
-    margin: 150px 650px 80px;
+    margin: 150px 570px 80px;
     width: 300px;
     display: block;
     color: #fff !important;
@@ -523,12 +542,12 @@ a.footer__btn:before {
 .footer__bottom {
     text-align: center;
     color: #A5A5A5;
-    width: 1500px;
+    width: 100%;
 }
 
 .footer__bottom--txt {
     position: absolute;
-    left: 620px;
+    left: 540px;
     padding-top: 40px;
 }
 
