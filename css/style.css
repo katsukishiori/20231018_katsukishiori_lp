@@ -97,13 +97,13 @@ h1.absolute__firstview {
 /*ニュース*/
 .news__ttl {
     margin-top: 350px;
-    margin-left: 150px;
+    margin-left: 400px;
     line-height: 50px;
     width: 100%;
 }
 
 p.news__ttl--top {
-    padding-left: 250px;
+    padding-top: 50px;
     font-size: 25px;
     color: #BF6C93;
     
@@ -112,13 +112,14 @@ p.news__ttl--top {
 h3.news__ttl--bottom {
     font-size: 30px;
     color: #747474;
-    padding-left: 250px;
+  
+    margin-right: 530px;
 }
 
 ul.news {
     width: 100%;
     padding-top: 80px;
-    padding-left: 400px;
+    margin-left: 400px;
     padding-bottom: 80px;
     text-decoration: none;
     font-size: 20px;
@@ -140,7 +141,7 @@ ul.news {
 }
 
 .news {
-    width: 50%;
+    width: 70%;
 }
 
 ul.news li {
@@ -159,7 +160,7 @@ li.news__list:last-child {
 }
 
 li.news__list {
-    width: 1000px;
+    width: 70%;
     list-style: none;
     color: #A5A5A5;
 }
@@ -415,24 +416,27 @@ h3.blog__ttl--bottom {
 .company__ttl {
     margin-top: 150px;
     margin-bottom: 20px;
-    margin-left: 150px;
+    margin-left: 400px;
     line-height: 50px;
+    width: 30%;
 }
 
 .company__ttl--top {
     font-size: 25px;
     color: #BF6C93;
+    width: 30%;
 }
 
 .company__ttl--bottom {
     font-size: 30px;
-    color: #747474
+    color: #747474;
+    width: 30%;
 }
 
 table.company__box {
     width: 60%;
     border-collapse: collapse;
-    margin-left: 150px;
+    margin-left: 400px;
 }
 table th,
 table td {
@@ -454,7 +458,7 @@ table td {
 
 /*インタビュー*/
 .interview {
-    width: 100%;
+    max-width: 100%;
     height: 400px;
     padding-top: 150px;
     display: flex;
@@ -471,19 +475,23 @@ table td {
 h6.interview__left--txt{
     font-size: 30px;
     color: #FFFFFF;
-    padding: 200px 300px;
+    /*padding: 200px 300px;*/
+    text-align: center;
+    margin-top: 25%;
 }
 
 .interview__right {
     background-image: url(../img/interview.png);
     background-position: right;
-    /*width: 50%;*/
+    width: 50%;
 }
 
 h6.interview__right--txt {
     font-size: 30px;
     color: #FFFFFF;
-    padding: 200px 250px;
+    /*padding: 200px 250px;*/
+    text-align: center;
+    margin-top: 25%;
 }
 
 /*フッター*/
@@ -555,3 +563,6 @@ a.footer__btn:before {
 
 
 
+* {
+    outline: 1px solid red !important;
+}
